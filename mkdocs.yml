@@ -44,22 +44,19 @@ nav:
     - RITSO: 
       - Home: ritso/index.md
       - Ontology formats: ritso/ontology_formats.md
-      - Ontology Registry: ritso/python/ontology_registry.md
-      - Concept Registry: ritso/python/concept_registry.md
+      - Ontology registry: ritso/python/ontology_registry.md
+      - Concept registry: ritso/python/concept_registry.md
+      - Imported ontologies:
+        - i72: ontology-imported-i72
       - City Data Model:
-        - Part 1: 
-          - v1.0.1: '!import https://github.com/iso-tc204/ontology-cdm-p1?branch=v1.0.1'
-        - Part 2: 
-          - v1.0.2: '!import https://github.com/iso-tc204/ontology-cdm-p2?branch=v1.0.2'
-        - Part 3: 
-          - v1.0.0: '!import https://github.com/iso-tc204/ontology-cdm-p3?branch=v1.0.0'
+        - Part 1: ontology-cdm-p1
+        - Part 2: ontology-cdm-p2
+        - Part 3: ontology-cdm-p3
       - ITS:
-        - Location: 
-          - v0.0.1: '!import https://github.com/iso-tc204/ontology-its-location?branch=v0.0.1'
-        - Regulation: 
-          - v0.0.1: '!import https://github.com/iso-tc204/ontology-its-regulation?branch=v0.0.1'
-        - Time: 
-          - v0.0.1: '!import https://github.com/iso-tc204/ontology-its-time?branch=v0.0.1'
+        - Core: ontology-its-core
+        - Location: ontology-its-location
+        - Regulation: ontology-its-regulation
+        - Time: ontology-its-time
   - Standards: 
     - Overview: standards.md
     - METR: https://iso-tc204.github.io/iso24315/
