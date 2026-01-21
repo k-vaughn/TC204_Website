@@ -47,16 +47,16 @@ nav:
       - Ontology registry: ritso/python/ontology_registry.md
       - Concept registry: ritso/python/concept_registry.md
       - Imported ontologies:
-        - i72: ontology-imported-i72
+        - i72: https://isotc204.org/ontology-imported-i72
       - City Data Model:
-        - Part 1: ontology-cdm-p1
-        - Part 2: ontology-cdm-p2
-        - Part 3: ontology-cdm-p3
+        - Part 1: https://isotc204.org/ontology-cdm-p1
+        - Part 2: https://isotc204.org/ontology-cdm-p2
+        - Part 3: https://isotc204.org/ontology-cdm-p3
       - ITS:
-        - Core: ontology-its-core
-        - Location: ontology-its-location
-        - Regulation: ontology-its-regulation
-        - Time: ontology-its-time
+        - Core: https://isotc204.org/ontology-its-core
+        - Location: https://isotc204.org/ontology-its-location
+        - Regulation: https://isotc204.org/ontology-its-regulation
+        - Time: https://isotc204.org/ontology-its-time
   - Standards: 
     - Overview: standards.md
     - METR: https://iso-tc204.github.io/iso24315/
