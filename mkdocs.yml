@@ -66,6 +66,14 @@ nav:
   - Cybersecurity: 
     - Introduction: cybersecurity/index.md
     - Beginners Guide: cybersecurity/beginners-guide.md 
+    - Cryptography Fundamentals: cybersecurity/primer-its-credentials.md
+    - ITS Security Regulations and Standards: 
+      - Overview: cybersecurity/its-security-standards.md
+      - Certificate Policy (CP): cybersecurity/policies-cp.md
+      - SCMS Policy: cybersecurity/policies-scms.md
+      - CCMS Policy: cybersecurity/policies-ccms.md
+      - Device Security Policy Configurations: cybersecurity/policies-device.md
+    - ITS Threat analysis: cybersecurity/threat-analysis.md
     - ITS Cybersecurity Patterns: 
       - Overview: cybersecurity/its-security-patterns.md
       - Secure ITS Management Patterns: cybersecurity/patterns-management.md
@@ -74,13 +82,7 @@ nav:
       - Network and Transport Security Patterns: cybersecurity/patterns-network.md
       - Deployment and Integration Security Patterns: cybersecurity/patterns-deployment.md
       - Developer Patterns: cybersecurity/patterns-developer.md
-    - ITS Security Regulations and Standards: 
-      - Overview: cybersecurity/its-security-standards.md
-      - Certificate Policy (CP): cybersecurity/policies-cp.md
-      - SCMS Policy: cybersecurity/policies-scms.md
-      - CCMS Policy: cybersecurity/policies-ccms.md
-      - Device Security Policy Configurations: cybersecurity/policies-device.md
-    - ITS Threat analysis: cybersecurity/threat-analysis.md
+      - Secure ITS Management Patterns: cybersecurity/patterns-management.md
     - Interoperability strategies: cybersecurity/its-interoperability-strategies.md
     - Stakeholder guidance: 
       - Overview: cybersecurity/its-stakeholder-guidance.md
@@ -91,7 +93,6 @@ nav:
       - Certificate Management Authorities: cybersecurity/stakeholder-certmgmt.md
       - Original Equipment Manufacturers (OEMs): cybersecurity/stakeholder-oem.md
     - Misuse Cases: cybersecurity/its-misuse-cases.md
-    - Secure ITS Management Patterns: cybersecurity/patterns-management.md
     - Glossary: cybersecurity/cybersecurity-glossary.md
   - Resources: resources.md
 site_url: https://isotc204.org/

@@ -10,7 +10,7 @@ In North America and other regions, the credential management function is perfor
 
 Both SCMS and CCMS architectures introduce a hierarchy of certificate authorities (CAs) and other components, each with a distinct role in establishing trust, authorizing behavior, and preserving privacy.  An example SCMS architecture is provided below. 
 
-![Example SCMS Architecture](images\scms_architecture_example.jpg)
+![Example SCMS Architecture](images/scms_architecture_example.jpg)
 
 These authorities work together to ensure that devices can securely participate in ITS communications without exposing long-term identity or enabling unauthorized behavior.
 

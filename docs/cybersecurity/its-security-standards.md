@@ -45,7 +45,7 @@ The [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) is widel
 
 NIST CSF 2.0 is structured hierarchically. Functions define high-level cybersecurity objectives (e.g., Govern, Identify, Protect). Each function is divided into Categories, which describe broad classes of cybersecurity outcomes (e.g,. asset management). Subcategories further refine each Category, by stating specific, outcome-oriented cybersecurity results that an organization should achieve, for example, "Inventories of hardware management by the organization are maintained".  
 
-![](images\nist_csf.jpg)
+![](images/nist_csf.jpg)
 
 [NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) then provides detailed cybersecurity and privacy requirements that can be mapped to the NIST CSF 2.0 subcategories, enabling organizations to select, implement, and assess controls that support the intended CSF 2.0 outcomes. 
 

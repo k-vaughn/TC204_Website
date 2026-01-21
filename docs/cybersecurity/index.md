@@ -54,7 +54,7 @@ There are multiple PKI providers that server ITS's across the globe. This requir
 
 ITS components operate in a range of contexts and environments. Oftentimes, devices are left unattended on the roadside. This may leave devices vulnerable to attacks that are made easier when the attacker has physical access. ITS vendors should provide their customers with the tools and information needed to securely configure and effectively lock down those devices. This section provides detailed configuration setting recommendations across a variety of categories, for example password management, user authentication, logging and encryption settings. The recommendations are based on established ITS guidance and can be applied across field devices, backend systems, and supporting applications to strengthen resilience and support consistent policy enforcement.  
 
-### 7. [**ITS Stakeholder Groups and Their Cybersecurity Focus Areas**](its-stakeholder-guidance.md)
+### 7. [ITS Stakeholder Groups and Their Cybersecurity Focus Areas](its-stakeholder-guidance.md)
 
 Roles and responsibilities for the cybersecurity and resilience of ITS's are divided across stakeholder categories.  
 
