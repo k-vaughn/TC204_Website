@@ -20,11 +20,17 @@ Begin with this [introductory guide](beginners-guide.md) to understand the basic
 
 ## ITS Cybersecurity
 
-### 1. [Security Regulations, Frameworks, Standards and Guidance Documents](its-security-standards.md)
+### 1. [ITS Cybersecurity Cryptography Fundamentals](primer-its-credentials.md)
+
+Organizations that develop or operate ITS must establish trust between vehicles, infrastructure, and supporting systems operating in open and distributed environments. Trust is established through the use of digital certificates that authenticate messages, authorize applications, and support privacy and accountability requirements.
+
+ITS certificate management defines how certificates are issued, validated, rotated, and revoked across vehicles, roadside equipment, and backend services. It relies on standards such as IEEE 1609.2 and related specifications, and is commonly implemented using a SCMS/CCMS. These mechanisms enable secure message exchange, application-level authorization, and interoperability across organizations and jurisdictions, while supporting privacy-preserving operations and controlled response to misbehavior.
+
+### 2. [Security Regulations, Frameworks, Standards and Guidance Documents](its-security-standards.md)
 
 Organizations that develop or operate an ITS or ITS components must often demonstrate that they meet a minimum set of cybersecurity requirements. There are standards and frameworks available that define those minimum requirements. For example, an OEM that develops a connected vehicle may adhere to ISO/SAE 21434, while an IOO that operates an ITS may adhere to ISO/IEC 27001 or even National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF) if based in North America. European organizations may also be required to adhere to regulations such as the EU Cyber Resilience Act or UNECE WP.19 R155. There are also technical standards that define how for example secure messaging should be developed and integrated into an ITS. These standards are defined by organizations such as the Society of Automotive Engineers (SAE), the Institute of Electrical and Electronics Engineers (IEEE) and others. 
 
-### 2. [Performing an ITS Threat Analysis](threat-analysis.md)
+### 3. [Performing an ITS Threat Analysis](threat-analysis.md)
 
 Any organization that develops or operates an ITS or ITS components must understand their unique risk profile. A Threat, Vulnerability and Risk Assessment (TVRA) can be conducted to identify threats, quantify likelihood and impact (should the threat be realized), and assess risk.   
 
@@ -32,11 +38,11 @@ In Europe, [ETSI TR 102 893](https://www.etsi.org/deliver/etsi_tr/102800_102899/
 
 There are many different approaches for conducting a threat and risk assessment, but in general the process chosen should include documenting ITS system assets, communication data flows and trust boundaries and then assigning threats to each of these logical structures. From there, an estimate of the likelihood and impact of each specific threat to the ITS can be calculated, providing a way to prioritize the risks in a quantifiable and defendable manner. This allows [cybersecurity executives](stakeholder-policy-maker.md) within an ITS organization to prioritize the most appropriate cybersecurity processes, procedures and technologies, given the risk profile and operational context of the system.
 
-### 3. [ITS Cyber Security Patterns](its-security-patterns.md)
+### 4. [ITS Cyber Security Patterns](its-security-patterns.md)
 
 Technology patterns provide a blueprint that describes how to design a capability in a repeatable manner. The ITS cybersecurity patterns in this section can be used by cybersecurity architects and engineers to efficiently implement specific security features and capabilities within an ITS. Patterns are categorized based on whether they apply to the management layer, application layer, device layer, network /transport layer, or to the secure development or deployment of an ITS.  By referencing these patterns, implementers can identify the protections most relevant to their systems, ensure alignment with applicable trust models, and select implementation approaches that provide strong, scalable, and auditable mitigation of cybersecurity risk.
 
-### 4. [Interoperability Strategies](its-interoperability-strategies.md)
+### 5. [Interoperability Strategies](its-interoperability-strategies.md)
 
 ITS interoperability focuses on the ability for vehicles, ITS devices and ITS services to be able to communicate with each other in a trusted manner. For example, an vehicle OBU from OEM A must be able to transmit a Basic Safety Message (BSM) and have that message be received and successfully processed by a vehicle OBU from OEM B, as well as by an RSU a different manufacturer, etc. This requires that interoperability be designed into ITS Standards that detail message fields and values, and that those message types be adopted by all participants within the ITS ecosystem. 
 
@@ -44,11 +50,11 @@ Trust adds another layer of interoperability complexity.  It is not sufficient f
 
 There are multiple PKI providers that server ITS's across the globe. This requires that there also be interoperability strategies put into place between the PKI providers themselves, to ensure that the trust associated with certificates issued by PKI Provider 1 is equivalent to the trust associated with certificates issued by PKI Provider n. One way to accomplish this is to ensure that the polices that each PKI provider operates by, are harmonized. Another method to accomplish this, is to engineer technical solutions. For example, in North America, IEEE 1609.2.2 (DRAFT) provides a mechanism whereby PKI Provider 1 establish conditional trust with PKI Provider 2, for example by allowing trust for BSMs but not for messages that request priority services. 
 
-### 5. [Device and Application Security Policy Recommendations](policies-device.md)
+### 6. [Device and Application Security Policy Recommendations](policies-device.md)
 
 ITS components operate in a range of contexts and environments. Oftentimes, devices are left unattended on the roadside. This may leave devices vulnerable to attacks that are made easier when the attacker has physical access. ITS vendors should provide their customers with the tools and information needed to securely configure and effectively lock down those devices. This section provides detailed configuration setting recommendations across a variety of categories, for example password management, user authentication, logging and encryption settings. The recommendations are based on established ITS guidance and can be applied across field devices, backend systems, and supporting applications to strengthen resilience and support consistent policy enforcement.  
 
-### 6. [**ITS Stakeholder Groups and Their Cybersecurity Focus Areas**](its-stakeholder-guidance.md)
+### 7. [**ITS Stakeholder Groups and Their Cybersecurity Focus Areas**](its-stakeholder-guidance.md)
 
 Roles and responsibilities for the cybersecurity and resilience of ITS's are divided across stakeholder categories.  
 
@@ -59,6 +65,6 @@ Roles and responsibilities for the cybersecurity and resilience of ITS's are div
 - **[ITS Manufacturers and Application Developers](stakeholder-appdev.md)**: ITS vendors should design and deliver ITS devices using a secure development methodology that protects the supply chain, development environment, and results in products that meet minimum baseline cybersecurity requirements.  This could include for example, secure boot, tamper detection, and certificate validation. ITS vendors are responsible for obtaining test and certification for devices that will be provisioned PKI certificates, to demonstrate that devices are secured according to any given PKI providers' enrollment requirements. 
 - **[Certificate Management Authorities](stakeholder-certmgmt.md)**: Certificate management authorities design, develop and operate PKI systems, such as CCMS and SCMS. They are responsible for ensuring that these systems comply with published certificate policy and practices, and that they successfully pass audits on a routine basis.
 
-### 7. [ITS Misuse Cases](its-misuse-cases.md)
+### 8. [ITS Misuse Cases](its-misuse-cases.md)
 
 ITS misuse cases illustrate how attackers could chain multiple threats together to compromise transportation systems. Each case provides a short scenario, identifies which assets are affected, and highlights the relevant threats and mitigations. Misuse cases are designed to illustrate how incidents may unfold in practice so that stakeholders can better understand how to calculate risk and choose the optimal cybersecurity patterns for risk mitigation.
