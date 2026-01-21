@@ -4,7 +4,7 @@ Intelligent Transport Systems (ITS) cybersecurity integrates layered regulations
 
 ## Global Interoperability Frameworks
 
-Global interoperability frameworks define policies or agreements that ensure cross-border operations. They are important for cross-border operations.  Today, most frameworks apply to a region, such as the European Union, North America, or Asia.  Organizations may be required to adhere to these frameworks in some instances, and in other instances may voluntarily adopt them, depending on the region that the organization operates within. 
+Global interoperability frameworks define policies or agreements that ensure cross-border operations. They are important for cross-border operations.  Today, most frameworks apply to a region, such as the European Union, North America, or Asia.  Organizations may be required to adhere to these frameworks in some instances, and in other instances may voluntarily adopt them, depending on the region that the organization operates within.
 
 ### European Union Cyber Resilience Act (CRA)
 
@@ -20,7 +20,7 @@ Products must undergo conformity assessment and display a CE marking before bein
 
 ### Directive (EU) 2022/2555 NIS Directive (NIS2)
 
-[NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng) requires operators of essential and digital services, which include transport and mobility operators,  to implement cybersecurity risk management measures, report significant incidents, and manage supply chain security. NIS2 addresses organizational resilience, requiring agencies, service providers, and operators to put governance and operational processes in place. NIS2 does not mandate ISO/IEC 27001 or ISO/SAE 21434 specifically, but both can serve as acceptable evidence of “appropriate and proportionate” cybersecurity measures. For example, a transportation management organization that is compliant with ISO/IEC 27001 for their organizational cybersecurity program, or an OEM that adheres to ISO/SAE 21434 for their Cybersecurity Management System (CSMS) would both acceptable ways to meet the expectations described in NIS2. 
+[NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng) requires operators of essential and digital services, which include transport and mobility operators,  to implement cybersecurity risk management measures, report significant incidents, and manage supply chain security. NIS2 addresses organizational resilience, requiring agencies, service providers, and operators to put governance and operational processes in place. NIS2 does not mandate ISO/IEC 27001 or ISO/SAE 21434 specifically, but both can serve as acceptable evidence of “appropriate and proportionate” cybersecurity measures. For example, a transportation management organization that is compliant with ISO/IEC 27001 for their organizational cybersecurity program, or an OEM that adheres to ISO/SAE 21434 for their Cybersecurity Management System (CSMS) would both acceptable ways to meet the expectations described in NIS2.
 
 ### UNECE Regulations R155 and R156
 
@@ -41,19 +41,19 @@ Global standards provide a structured methodology for managing cybersecurity ris
 
 ### NIST Cybersecurity Framework (CSF)
 
-The [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) is widely adopted in North America as a risk-based approach to organizing cybersecurity activities. It is structured around six functions: Govern, Identify, Protect, Detect, Respond, and Recover. The CSF guides organizations in setting cybersecurity expectations, performing risk assessments, and aligning operational practices such as patching, monitoring, and incident response. For ITS deployments, state departments of transportation, municipalities, and traffic management centers often use the CSF to structure their security programs and demonstrate alignment with national policy guidance. While the CSF provides a strong governance structure, it does not define technical requirements for ITS protocols or devices, which must be derived from sector-specific standards. 
+The [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) is widely adopted in North America as a risk-based approach to organizing cybersecurity activities. It is structured around six functions: Govern, Identify, Protect, Detect, Respond, and Recover. The CSF guides organizations in setting cybersecurity expectations, performing risk assessments, and aligning operational practices such as patching, monitoring, and incident response. For ITS deployments, state departments of transportation, municipalities, and traffic management centers often use the CSF to structure their security programs and demonstrate alignment with national policy guidance. While the CSF provides a strong governance structure, it does not define technical requirements for ITS protocols or devices, which must be derived from sector-specific standards.
 
 NIST CSF 2.0 is structured hierarchically. Functions define high-level cybersecurity objectives (e.g., Govern, Identify, Protect). Each function is divided into Categories, which describe broad classes of cybersecurity outcomes (e.g,. asset management). Subcategories further refine each Category, by stating specific, outcome-oriented cybersecurity results that an organization should achieve, for example, "Inventories of hardware management by the organization are maintained".  
 
-![](images\nist_csf.jpg)
+![NIST Cybersecurity Framework](images/nist_csf.jpg)
 
-[NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) then provides detailed cybersecurity and privacy requirements that can be mapped to the NIST CSF 2.0 subcategories, enabling organizations to select, implement, and assess controls that support the intended CSF 2.0 outcomes. 
+[NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) then provides detailed cybersecurity and privacy requirements that can be mapped to the NIST CSF 2.0 subcategories, enabling organizations to select, implement, and assess controls that support the intended CSF 2.0 outcomes.
 
-#### The ITS Cybersecurity Framework Profile 
+#### The ITS Cybersecurity Framework Profile
 
-While the NIST CSF 2.0 provides a broad framework for describing cybersecurity outcomes across sectors, profiles can be used to tailor the framework to the needs of specific industries or technologies. In the United States, the ITS Cybersecurity Framework Profile has been developed to apply the NIST CSF structure to the unique environment that an ITS operates within. The ITS CSF Profile maps CSF Functions, Categories, and Subcategories to transportation-specific cybersecurity outcomes, reflecting how cybersecurity objectives should be viewed in real-world ITS deployments. 
+While the NIST CSF 2.0 provides a broad framework for describing cybersecurity outcomes across sectors, profiles can be used to tailor the framework to the needs of specific industries or technologies. In the United States, the ITS Cybersecurity Framework Profile has been developed to apply the NIST CSF structure to the unique environment that an ITS operates within. The ITS CSF Profile maps CSF Functions, Categories, and Subcategories to transportation-specific cybersecurity outcomes, reflecting how cybersecurity objectives should be viewed in real-world ITS deployments.
 
-The ITS CSF Profile provides a common cybersecurity reference point for infrastructure owner operators, system integrators, device manufacturers, and application developers.  To enable implementation, the ITS CSF Profile is used to derive device-specific cybersecurity control sets for common ITS technologies, including DMS, RSUs, ATCs, and CCTV systems. These control sets map CSF Subcategory outcomes to the unique operational and risk characteristics of each device type, supporting consistent, cybersecurity implementation by stakeholders developing, operating and maintaining each of these specific technologies. 
+The ITS CSF Profile provides a common cybersecurity reference point for infrastructure owner operators, system integrators, device manufacturers, and application developers.  To enable implementation, the ITS CSF Profile is used to derive device-specific cybersecurity control sets for common ITS technologies, including DMS, RSUs, ATCs, and CCTV systems. These control sets map CSF Subcategory outcomes to the unique operational and risk characteristics of each device type, supporting consistent, cybersecurity implementation by stakeholders developing, operating and maintaining each of these specific technologies.
 
 ### ISO/IEC 27001
 
@@ -90,8 +90,8 @@ The structure of trust management varies by region. In North America, the Securi
 
 Both SCMS and CCMS models rely on CP/CPS documents to ensure that only eligible devices are authorized to participate in ITS communications, that certificates are properly managed across their lifecycle, and that misbehaviour can be detected and acted upon. This ensures that trust anchors remain valid and that the overall PKI ecosystem is resilient and interoperable across jurisdictions.
 
-- C-ITS Credential Management System (CCMS) Certificate Policy (CP)  governs the issuance and lifecycle management of 1609.2 certificates within the CCMS. It defines how Root and Enrollment Authorities issue certificates, how revocation is managed, and how trust anchors are distributed. The CCMS CP establishes the minimum requirements for cryptographic algorithms, certificate validity, ITS Station enrollment, and operational practices to ensure interoperability and security of C-ITS applications. 
-- SCMS Manager Provider Requirements – provide a template for SCMS Providers in North America to develop a CP that specifies how ITS-Stations are provisioned, how certificates are issued and rotated, and requirements for misbehavior reports and certificate revocation. 
+- C-ITS Credential Management System (CCMS) Certificate Policy (CP)  governs the issuance and lifecycle management of 1609.2 certificates within the CCMS. It defines how Root and Enrolment Authorities issue certificates, how revocation is managed, and how trust anchors are distributed. The CCMS CP establishes the minimum requirements for cryptographic algorithms, certificate validity, ITS Station enrolment, and operational practices to ensure interoperability and security of C-ITS applications.
+- SCMS Manager Provider Requirements – provide a template for SCMS Providers in North America to develop a CP that specifies how ITS-Stations are provisioned, how certificates are issued and rotated, and requirements for misbehaviour reports and certificate revocation.
 
 ### Technical Standards
 

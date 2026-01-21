@@ -1,3 +1,5 @@
+![Draft for review only](/assets/img/draft_for_review.svg)
+
 # Registry of Intelligent Transport Systems Ontologies (RITSO)
 
 Welcome to the RITSO. This registry is being established to capture ontologies used within the ITS industry so that the fundamental semantic relationships among concepts can be applied consistently across standards and implementations.
