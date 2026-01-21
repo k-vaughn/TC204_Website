@@ -1,14 +1,10 @@
 # ITS Security Regulations, Frameworks, Standards and Guidance Documents
 
-Cybersecurity for Intelligent Transport Systems (ITS) is governed by a layered set of regulations, frameworks, standards and policy. These instruments regulate or specify different aspects of ITS cybersecurity, from how organizations must govern their ITS implementations, to how product vendors must design cybersecurity into devices from the outset, to how technical standards define the protocols and controls that enable secure communications and trust management.
-
-This page provides stakeholders with a reference to the major regulatory and standards instruments shaping ITS cybersecurity worldwide. It highlights how global frameworks interact with regional obligations, and how technical standards implement those requirements in practice.
-
-![Standards and Policies](images/standards-and-policies.jpg)
+Intelligent Transport Systems (ITS) cybersecurity integrates layered regulations, frameworks, standards and policy. These documents govern how organizations manage ITS deployments and how product vendors integrate cybersecurity into product design. This page provides a high level description of how global frameworks interact with regional standards to support deployment and operation of secure ITS. ![Standards and Policies](images/standards-and-policies.jpg)
 
 ## Global Interoperability Frameworks
 
-Global interoperability frameworks establish binding or cross-border rules that ensure consistent cybersecurity obligations for ITS devices and services. They provide the legal and regulatory foundation for secure ITS operations and are supported by technical standards that enable practical interoperability.
+Global interoperability frameworks define policies or agreements that ensure cross-border operations. They are important for cross-border operations.  Today, most frameworks apply to a region, such as the European Union, North America, or Asia.  Organizations may be required to adhere to these frameworks in some instances, and in other instances may voluntarily adopt them, depending on the region that the organization operates within. 
 
 ### European Union Cyber Resilience Act (CRA)
 
@@ -20,11 +16,11 @@ The [European Union (EU) Cyber Resilience Act](https://eur-lex.europa.eu/eli/reg
 - continuous vulnerability remediation
 - patching for the full operational lifetime of the product
 
-Products must undergo conformity assessment and display a CE marking before being placed on the EU market. The CRA also mandates vulnerability disclosure processes, incident handling procedures, and supply chain security requirements. This regulation establishes a harmonized baseline of cybersecurity expectations for all ITS products used within the EU.
+Products must undergo conformity assessment and display a CE marking before being placed on the EU market. The CRA also mandates vulnerability disclosure processes, incident handling procedures, and supply chain security requirements. This regulation establishes a harmonized baseline of cybersecurity expectations for all ITS products used within the EU.  ISO/SAE 21434 supports compliance in the automotive/ITS domain.
 
-### NIS Directive
+### Directive (EU) 2022/2555 NIS Directive (NIS2)
 
-[NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng) requires operators of essential and digital services, which include transport and mobility operators,  to implement cybersecurity risk management measures, report significant incidents, and manage supply chain security. Unlike CRA’s product focus, NIS2 addresses organizational resilience, requiring agencies, service providers, and operators to put governance and operational processes in place. NIS2 does not mandate ISO/IEC 27001 or ISO/SAE 21434 specifically, but both can serve as acceptable evidence of “appropriate and proportionate” cybersecurity measures.
+[NIS2](https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng) requires operators of essential and digital services, which include transport and mobility operators,  to implement cybersecurity risk management measures, report significant incidents, and manage supply chain security. NIS2 addresses organizational resilience, requiring agencies, service providers, and operators to put governance and operational processes in place. NIS2 does not mandate ISO/IEC 27001 or ISO/SAE 21434 specifically, but both can serve as acceptable evidence of “appropriate and proportionate” cybersecurity measures. For example, a transportation management organization that is compliant with ISO/IEC 27001 for their organizational cybersecurity program, or an OEM that adheres to ISO/SAE 21434 for their Cybersecurity Management System (CSMS) would both acceptable ways to meet the expectations described in NIS2. 
 
 ### UNECE Regulations R155 and R156
 
@@ -37,7 +33,7 @@ Together, R155 and R156 define how OEMs and suppliers address lifecycle security
 
 ### ITS Directive (Directive 2010/40/EU)
 
-[The ITS Directive](https://eur-lex.europa.eu/eli/dir/2010/40/oj/eng) provides the EU framework for coordinated ITS deployment. It enables binding delegated acts across domains such as real-time traffic information and cooperative ITS. Service providers under the Directive may be required to provide feedback when distributing ITS data and messages. This has implications for how IOOs, map providers, and OEMs structure feedback and discrepancy handling in ITS deployments
+[The ITS Directive](https://eur-lex.europa.eu/eli/dir/2010/40/oj/eng) provides the EU framework for coordinated ITS deployment and includes obligations for service providers. It enables binding delegated acts across domains such as real-time traffic information and cooperative ITS. Service providers under the Directive may be required to provide feedback when distributing ITS data and messages. This has implications for how IOOs, map providers, service providers, and OEMs structure feedback and discrepancy handling in ITS deployments
 
 ## Global Standards
 
@@ -45,9 +41,19 @@ Global standards provide a structured methodology for managing cybersecurity ris
 
 ### NIST Cybersecurity Framework (CSF)
 
-The [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) is widely adopted in North America as a risk-based approach to organizing cybersecurity activities. It is structured around six functions: Govern, Identify, Protect, Detect, Respond, and Recover. The CSF guides organizations in setting cybersecurity expectations, performing risk assessments, and aligning operational practices such as patching, monitoring, and incident response. For ITS deployments, state departments of transportation, municipalities, and traffic management centers often use the CSF to structure their security programs and demonstrate alignment with national policy guidance. While the CSF provides a strong governance structure, it does not define technical requirements for ITS protocols or devices, which must be derived from sector-specific standards.
+The [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) is widely adopted in North America as a risk-based approach to organizing cybersecurity activities. It is structured around six functions: Govern, Identify, Protect, Detect, Respond, and Recover. The CSF guides organizations in setting cybersecurity expectations, performing risk assessments, and aligning operational practices such as patching, monitoring, and incident response. For ITS deployments, state departments of transportation, municipalities, and traffic management centers often use the CSF to structure their security programs and demonstrate alignment with national policy guidance. While the CSF provides a strong governance structure, it does not define technical requirements for ITS protocols or devices, which must be derived from sector-specific standards. 
 
-The CSF is often paired with [NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final), which provides the detailed catalog of security and privacy controls that can be tailored to ITS devices, systems, and applications. FHWA’s ITS Security Control Sets are directly derived from NIST SP 800-53.
+NIST CSF 2.0 is structured hierarchically. Functions define high-level cybersecurity objectives (e.g., Govern, Identify, Protect). Each function is divided into Categories, which describe broad classes of cybersecurity outcomes (e.g,. asset management). Subcategories further refine each Category, by stating specific, outcome-oriented cybersecurity results that an organization should achieve, for example, "Inventories of hardware management by the organization are maintained".  
+
+![](images\nist_csf.jpg)
+
+[NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) then provides detailed cybersecurity and privacy requirements that can be mapped to the NIST CSF 2.0 subcategories, enabling organizations to select, implement, and assess controls that support the intended CSF 2.0 outcomes. 
+
+#### The ITS Cybersecurity Framework Profile 
+
+While the NIST CSF 2.0 provides a broad framework for describing cybersecurity outcomes across sectors, profiles can be used to tailor the framework to the needs of specific industries or technologies. In the United States, the ITS Cybersecurity Framework Profile has been developed to apply the NIST CSF structure to the unique environment that an ITS operates within. The ITS CSF Profile maps CSF Functions, Categories, and Subcategories to transportation-specific cybersecurity outcomes, reflecting how cybersecurity objectives should be viewed in real-world ITS deployments. 
+
+The ITS CSF Profile provides a common cybersecurity reference point for infrastructure owner operators, system integrators, device manufacturers, and application developers.  To enable implementation, the ITS CSF Profile is used to derive device-specific cybersecurity control sets for common ITS technologies, including DMS, RSUs, ATCs, and CCTV systems. These control sets map CSF Subcategory outcomes to the unique operational and risk characteristics of each device type, supporting consistent, cybersecurity implementation by stakeholders developing, operating and maintaining each of these specific technologies. 
 
 ### ISO/IEC 27001
 
@@ -58,9 +64,13 @@ The CSF is often paired with [NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/
 - Asset and configuration management
 - Auditing and continuous improvement
 
+In Europe, although ISO/IEC 27001 is not formally required under the CRA, it provides a recognized way for organizations to demonstrate compliance with obligations around risk management.
+
 ### ISO/SAE 21434
 
 [ISO/SAE 21434](https://www.iso.org/obp/ui/en/#iso:std:iso-sae:21434) establishes detailed engineering practices for automotive and ITS cybersecurity by defining lifecycle processes that begin with threat analysis and risk assessment and extend through secure design, development, and supplier coordination. The standard also emphasizes the importance of validation, post-production monitoring, and incident response, ensuring that security is treated as an ongoing responsibility rather than a one-time exercise. It is recognized globally as the engineering benchmark for demonstrating compliance with UNECE R155, providing manufacturers with a structured method to show that cybersecurity has been embedded into every stage of the vehicle and ITS product lifecycle.
+
+In Europe, ISO/SAE 21434 is not formally required under the CRA but provides a recognized way for automotive and ITS manufacturers to demonstrate secure-by-design practices and lifecycle risk management, supporting compliance with both CRA and UNECE R155.
 
 ## National and Local Policies
 
@@ -79,6 +89,9 @@ A [Certificate Policy (CP)](policies-cp.md) defines the conditions under which c
 The structure of trust management varies by region. In North America, the Security Credential Management System (SCMS) uses a quorum of Electors to manage the Certificate Trust List (CTL) and to approve or revoke Root Certificate Authorities (RCAs). Each SCMS Provider operates under a CP that defines its responsibilities for certificate issuance, rotation, and misbehaviour report handling. SCMS Provider CPs must comply with SCMS Provider Requirements, as specified by the [SCMS Manager](https://www.scmsmanager.org/publications/). In Europe, the Cooperative ITS Credential Management System (CCMS) is managed centrally by a Certificate Policy Authority (CPA), which governs the European Certificate Trust List (ECTL). Root CAs seeking to be included in the ECTL must conform to the harmonized CP, and compliance is enforced through audit and assessment.
 
 Both SCMS and CCMS models rely on CP/CPS documents to ensure that only eligible devices are authorized to participate in ITS communications, that certificates are properly managed across their lifecycle, and that misbehaviour can be detected and acted upon. This ensures that trust anchors remain valid and that the overall PKI ecosystem is resilient and interoperable across jurisdictions.
+
+- C-ITS Credential Management System (CCMS) Certificate Policy (CP)  governs the issuance and lifecycle management of 1609.2 certificates within the CCMS. It defines how Root and Enrollment Authorities issue certificates, how revocation is managed, and how trust anchors are distributed. The CCMS CP establishes the minimum requirements for cryptographic algorithms, certificate validity, ITS Station enrollment, and operational practices to ensure interoperability and security of C-ITS applications. 
+- SCMS Manager Provider Requirements – provide a template for SCMS Providers in North America to develop a CP that specifies how ITS-Stations are provisioned, how certificates are issued and rotated, and requirements for misbehavior reports and certificate revocation. 
 
 ### Technical Standards
 
@@ -134,6 +147,7 @@ Apply these standards to enforce confidentiality, integrity, and authentication 
 | IEEE 802.1X                     | Standard      | Network access control protocol used in Ethernet-based ITS backhaul  networks. | [Infrastructure Owners and Operators](stakeholder-ioo.md)    |
 | IEEE 802.3                      | Standard      | Ethernet standard supporting wired communications among traffic  infrastructure. | [Infrastructure Owners and Operators](stakeholder-ioo.md)    |
 | IEEE Std. 1609.3                | Standard      | Defines IPv6, WAVE short message protocol and service advertisement. | [Infrastructure Owners and Operators](stakeholder-ioo.md)  [Application and Service Providers](stakeholder-appdev.md) |
+| ISO 21177                       | Standard      | Provides ITS station security services for session establishment and authentication, enabling secure data exchange between vehicles, roadside units, and central systems. | [Infrastructure Owners and Operators](stakeholder-ioo.md)  [Application and Service Providers](stakeholder-appdev.md) |
 
 #### Application Security Standards
 
@@ -146,7 +160,7 @@ These standards define how ITS messages are structured, signed, and validated. T
 | ETSI EN 302 637-2 / -3               | Standard      | Defines CAM and DENM message formats.                        | [Application and Service Providers](stakeholder-appdev.md)   |
 | ISO 16460                            | Standard      | Harmonized framework for V2X messages.                       | [Standards Development Organizations](stakeholder-standards-developer.md) |
 | ETSI TS 102 894-2                    | Standard      | Common ITS data dictionary.                                  | [Application and Service Providers](stakeholder-appdev.md)   |
-| ETSI TS 103 097                      | Standard      | European message authentication and trust validation.        | [Credential Management Authorities](stakeholder-certmgmt.md) |
+| ETSI TS 103 097                      | Standard      | Specifies security headers and message formats for Cooperative ITS (C-ITS) in Europe for message authentication and trust validation. | [Credential Management Authorities](stakeholder-certmgmt.md) |
 | ISO 19091                            | Standard      | Harmonized SPaT/MAP message format  (internationalized SAE). | [Application and Service Providers](stakeholder-appdev.md) [Infrastructure Owners and Operators](stakeholder-ioo.md) |
 | ISO/TR 21186-1                       | Standard      | Use cases and profiles for secure data exchange.             | [Application and Service Providers](stakeholder-appdev.md)   |
 | ISO/TS 21184 / ISO/TS 21185          | Standard      | Data and communication profiles for trusted ITS exchange.    | [Application and Service Providers](stakeholder-appdev.md),  [Credential Management Authorities](stakeholder-certmgmt.md) |
