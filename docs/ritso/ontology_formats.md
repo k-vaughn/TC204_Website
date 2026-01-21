@@ -53,8 +53,6 @@ While the RITSO allows the use of any defined annotation, the following are reco
 | `dcterms:contributor`           | Contributor to the ontology for which credit is to be provided.                                 |
 | `dcterms:issued`                | Year that the associated document was formally issued.                                          |
 | `dcterms:modified`              | Identifies the date of an update date; pair with repeatable `skos:changeNote` for descriptions. |
-| `owl:backwardCompatibility`     | Formally declares backward compatibility with the indicated `owl:priorVersion`.                 |
-| `owl:incompatibleWith`          | Formally declares non-backward compatibility with the indicated priorVersion.                   |
 | `rdfs:seeAlso`                  | Provides the URI of the document that formalizes or explains this ontology.                     |
 | `skos:changeNote`               | Provides a description of the update date; pair with `dcterms:modified`                         |
 
