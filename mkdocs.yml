@@ -70,6 +70,7 @@ nav:
         - Regulation: https://isotc204.org/ontology-its-regulation-v1
         - Time: https://isotc204.org/ontology-its-time-v1
         - Transport Network: https://isotc204.org/ontology-its-transport-network-v1
+        - Vehicle: https://isotc204.org/ontology-its-vehicle-v1
   - Standards: 
     - Overview: standards.md
     - Extracts:
