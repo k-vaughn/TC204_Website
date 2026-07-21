@@ -125,9 +125,6 @@ plugins:
       fallback_to_build_date: true 
       strict: false  
   - include-markdown
-  - multirepo:
-      cleanup: true
-      keep_docs_dir: false
 markdown_extensions:
   - abbr
   - admonition
